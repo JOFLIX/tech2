@@ -22,9 +22,9 @@ $msg .= "</body></html>";
  
 // отправка сообщения
 if(@mail($sendto, $subject, $msg, $headers)) {
-    echo "<html><head><meta http-equiv="refresh" content="4; url=http://medicine-live.ru/tech"></head><body>Ваш запрос упешно отправлен!<br> Через 4 секунды вы будете возвращены на страницу</body></html>";
+    echo '<html><head><meta http-equiv="Refresh" content="4; url=http://medicine-live.ru/tech/"></head><body>Ваш запрос упешно отправлен!<br> Через 4 секунды вы будете возвращены на страницу</body></html>';
 } else {
-    echo "<html><head><meta http-equiv="refresh" content="4; url=http://medicine-live.ru/tech"></head><body>Проблема с отправкой запроса, напишите нам на почту medicineliveru@gmail.com!<br> Через 4 секунды вы будете возвращены на страницу</body></html>";
+    echo '<html><head><meta http-equiv="refresh" content="4; url=http://medicine-live.ru/tech"></head><body>Проблема с отправкой запроса, напишите нам на почту medicineliveru@gmail.com!<br> Через 4 секунды вы будете возвращены на страницу</body></html>';
 }
  
 ?>
